@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit', function(event) {
 });
 
 function refreshWeatherData(postalCode) {
-  let CURRENT_WEATHER_URL=`http://api.weatherapi.com/v1/current.json?key=0613f9d5bd234865afd150529212206&q=${postalCode}&aqi=no`
+  let CURRENT_WEATHER_URL=`https://api.weatherapi.com/v1/current.json?key=0613f9d5bd234865afd150529212206&q=${postalCode}&aqi=no`
 
   axios.get(CURRENT_WEATHER_URL).then(function(response) {
     let weatherData = response.data;
