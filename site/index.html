@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <form id="weather-form">
+    <input type="text" name="postal-code" id="postal-code">
+    <button type="submit">Update</button>
+  </form>
+  <h1>Current Temperature in <span id="current-location">ENTER ZIP CODE</span></h1>
+  <h2><span id="current-temp"></span>&deg;F</h2>
+  <script src="weather.js"></script>
+</body>
+</html>
