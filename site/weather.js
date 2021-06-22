@@ -1,6 +1,8 @@
 let weatherForm = document.querySelector('#weather-form');
 
 weatherForm.addEventListener('submit', function(event) {
+  // preventDefault() stops the <form> from submitting,
+  // which causes the page to reload.
   event.preventDefault();
 
   let postalCode = document.querySelector('#postal-code').value;
